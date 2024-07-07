@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .align-elements {
+    @apply max-w-6xl mx-auto;
+  }
+}
+
+@keyframes colorCycle {
+  0% {
+    color: #3f3f3f;
+  }
+  16.67% {
+    color: #ff8000;
+  }
+  33.33% {
+    color: #00b3ff;
+  } /* sariq */
+  50% {
+    color: #1fb52e;
+  }
+  66.67% {
+    color: #0000ff;
+  }
+  83.33% {
+    color: #eae8ec;
+  }
+  100% {
+    color: #ff0000;
+  }
+}
+.animate-colorCycle {
+  animation: colorCycle 6s linear infinite;
+}
